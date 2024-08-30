@@ -73,7 +73,7 @@ Submit a report as a single PDF file to Gradescope that covers the following top
 
 1. **Goals** (1 page max): Provide a list of organizational objectives, leading indicators, user outcomes, and model properties.
 2. **Environment and Machine** (0.5 page max): Identify environmental entities and machine components (AI and non-AI) in this scenario. The machine components must include at least one AI component that performs image recognition.
-3. **Requirement Decomposition** (1 page max): Select **one** of requirement to analyze based on the goals identified above. Specify a list of environment assumptions (ENV) and specifications (SPEC) that are needed to establish this requirement (REQ).
+3. **Requirement Decomposition** (1 page max): Select **one** requirement to analyze based on the goals identified above. Specify a list of environment assumptions (ENV) and specifications (SPEC) that are needed to establish this requirement (REQ).
 4. **Risk analysis** (1.5 page max) Perform a fault tree analysis to identify potential root causes for the violation of the requirement selected in the previous step. Identify all minimal cut sets in your fault tree. 
 5. **Mitigations** (1 page max): Suggest at least two mitigation strategy to reduce the risk of the failure studied in the fault tree. Both mitigations should be at the system level, outside of the ML component (i.e., not just "collect more training data"). Briefly explain how the mitigations reduce the risk. Provide a second updated fault tree that includes those mitigations.
 
@@ -83,7 +83,9 @@ Submit a report as a single PDF file to Gradescope that covers the following top
 2. **Recommendation and justification of deployment architecture** (1 page max): Recommend a deployment architecture and justify this recommendation in terms of the relative relevance of the qualities and the tradeoffs among quality attributes.
 3. **Telemetry** (1 page max): Suggest how telemetry should be selected, describe how quality would be measured from telemetry data, and briefly justify those decisions.
 
-For drawing fault trees, you may use any tool of your choice. A scan of a hand-drawn diagram is acceptable, as long as it is clearly legible. There are also several free FTA tools you may wish to use; e.g., [Fault Tree Analyzer](https://www.fault-tree-analysis-software.com) or [Open Reliability Editor](https://github.com/troeger/fuzzed).
+For drawing fault trees, you may use any tool of your choice (e.g., Google Drawings or [draw.io](https://app.diagrams.net/)). A scan of a hand-drawn diagram is acceptable, as long as it is clearly legible. There are also free FTA apps you could use; e.g., [Fault Tree Analyzer](https://www.fault-tree-analysis-software.com).
+
+Page limits are recommendations and not strictly enforced. You can exceed the page limit if there is a good reason. We prefer precise and concise answers over long and rambling ones.
 
 ## Grading
 
@@ -93,13 +95,13 @@ The assignment is worth 200 points. For full credit, we expect:
 
 * [ ] 20 points: Goals are listed and appropriately grouped. The goals relate to the scenario and are reasonably complete.
 * [ ] 10 points: Environment entities and machine components relevant to the scenario are listed. The machine components include at least one AI component that performs image recognition.
-* [ ] 10 points: A selected requirement (REQ) is clearly stated. The requirement mention only phenomena in the world.
+* [ ] 10 points: A selected requirement (REQ) is clearly stated. The requirement mentions only phenomena in the world.
 * [ ] 10 points: Environmental assumptions (ENV) are clearly stated. These assumptions relate to phenomena in the world or map those to shared phenomena accessibly by the machine.
 * [ ] 10 points: Machine specifications (SPEC) are clearly stated. These specifications mention only those phenomena in the interface between the world and the machine.
 * [ ] 5 points: The requirement, environmental assumption, and machine specifications fit reasonably together and correspond to the scenario.
 * [ ] 15 points: A fault tree that shows possible causes behind the violation of the requirement selected in Q3 is included. The included fault tree is syntactically valid.
 * [ ] 10 points: Minimal cut sets are identified from the fault tree.
-* [ ] 10 points: At least two mitigation strategies, corresponding to the requirement and the cut sets identified, are described. The description explains how the risk is reduced. The mitigations are at the system level outside the component. The mitigations are shown in an updated fault tree.
+* [ ] 10 points: At least two mitigation strategies, corresponding to the requirement and the cut sets identified, are described. The description explains how the risk is reduced. The mitigations are at the system level outside the ML component. The mitigations are shown in an updated fault tree.
 
 **Part B: Architecture**
 
@@ -112,3 +114,12 @@ The assignment is worth 200 points. For full credit, we expect:
 * [ ] 10 points: Telemetry design is suggested and described, describing the goal of the telemetry and what data is collected. 
 * [ ] 10 points: The telemetry section contains a description of quality measures and how they can be derived from the telemetry data. 
 * [ ] 10 points: The telemetry section contains a justification for the chosen approach. The justification considers (1) the amount of data transmitted or stored, (2) how telemetry copes with rare events, and (3) whether this form of telemetry can detect both false positives and false negatives.
+
+
+# Groupwork option
+
+To encourage deeper engagement with the content and collaboration, we provide the option for this assignment to work together with one other student in the class. We suggest teams for the assignment on Canvas.
+
+If you work together as a team, you can either submit a joint solution or separate solutions on Gradescope. If you submit a joint solution, both team members must have contributed to the solution and both team members will receive the same grade. If you submit separate solutions, those solutions may share text and you may discuss all aspects of the assignment, but we will grade them separately. Always make sure that you indicate with whom you worked together, even if just for part of the assignment.
+
+Groupwork is optional. You may decide to work alone.

@@ -28,11 +28,11 @@ A sample dataset from Schufa is available for download (https://archive.ics.uci.
 
 *We intend this to be easy; it is just a necessary step to produce a model you can work with. You may reuse existing code you find online for this task. For example, we recommend the following Kaggle [notebook](https://www.kaggle.com/kabure/predicting-credit-risk-model-pipeline/notebook), although you are free to use any other code, as long as you credit the source.*
 
-**Task 2: Measuring fairness:** Consider gender and age as protected attributes and assume that the labels in the validation data are an accurate reflection of that person’s risk of defaulting on a loan. For each protected attribute evaluate the fairness *of your model* using (a) anti-classification, (b) independence, and (c) separation as the fairness criteria. If you need to make assumptions (e.g., select thresholds) state your assumptions.
+**Task 2: Measuring fairness:** Consider gender and age as protected attributes and assume that the labels in the validation data are an accurate reflection of that person’s risk of defaulting on a loan. For each protected attribute evaluate the fairness *of your model* using (a) anti-classification, (b) group fairness, and (c) separation as the fairness criteria. If you need to make assumptions (e.g., select thresholds) state your assumptions.
 
 *You may use existing tools like IBM’s [AI Fairness 360](https://www.ibm.com/blogs/research/2018/09/ai-fairness-360/) toolkit, but it might be easier to implement this yourself and derive measures directly from tests and the confusion matrix.* 
 
-**Task 3: Improve model fairness:** For *one* protected attribute of your choice and *each* of the three fairness measures, try to improve the fairness of your classifier and evaluate the impact on model accuracy. You will likely want to try different interventions depending on the fairness measure you try to improve. Examples of simple interventions include, eliminating the protected attribute for anti-classification, and tweaking thresholds for independence and separation. If you like, you can also explore more advanced interventions such as augmenting training data, preprocessing, or tweaking learning techniques, possibly with existing tools like IBM’s [AI Fairness 360](https://www.ibm.com/blogs/research/2018/09/ai-fairness-360/) toolkit.
+**Task 3: Improve model fairness:** For *one* protected attribute of your choice and *each* of the three fairness measures, try to improve the fairness of your classifier and evaluate the impact on model accuracy. You will likely want to try different interventions depending on the fairness measure you try to improve. Examples of simple interventions include, eliminating the protected attribute for anti-classification, and tweaking thresholds for group fairness and separation. If you like, you can also explore more advanced interventions such as augmenting training data, preprocessing, or tweaking learning techniques, possibly with existing tools like IBM’s [AI Fairness 360](https://www.ibm.com/blogs/research/2018/09/ai-fairness-360/) toolkit.
 
 **Task 4: Fairness properties:** Discuss which fairness property may be suitable in the credit rating setting and why. If you could only enforce one fairness property, which one would it be?
 
@@ -66,3 +66,12 @@ The assignment is worth 100 points. For full credit, we expect:
   * [ ] 10 points: A discussion of harms of representation and harms of allocation and corresponding groups/protected attributes in the context of the movie recommendation example is included.
   * [ ] 10 points: A discussion of the five sources of bias in the context of the movie recommendation example is included.
   * [ ] 10 points: The report includes a justified recommendation of at least *one* engineering practice (which can be **one** of (1) data collection & pre-processing, (2) fairness criteria selection and (3) monitoring & escalation) or a justification why no practice shall be adopted. The recommendation and justifications are grounded in the realism of the movie recommendation scenario.
+
+
+# Groupwork option
+
+To encourage deeper engagement with the content and collaboration, we provide the option for this assignment to work together with one other student in the class. We suggest teams for the assignment on Canvas.
+
+If you work together as a team, you can either submit a joint solution or separate solutions on Gradescope. If you submit a joint solution, both team members must have contributed to the solution and both team members will receive the same grade. If you submit separate solutions, those solutions may share text and you may discuss all aspects of the assignment, but we will grade them separately. Always make sure that you indicate with whom you worked together, even if just for part of the assignment.
+
+Groupwork is optional. You may decide to work alone.
